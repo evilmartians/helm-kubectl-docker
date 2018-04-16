@@ -11,3 +11,9 @@ Use this one at your own risk!
 Tags:
 
 * `2.8.2` - helm `2.8.2`; kubectl `1.10.1`; alpine `3.7`
+
+## Docker pull
+
+```shell
+docker pull quay.io/evilmartians/helm-kubectl:2.8.2
+```
