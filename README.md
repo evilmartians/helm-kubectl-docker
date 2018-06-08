@@ -15,5 +15,5 @@ Tags:
 ## Docker pull
 
 ```shell
-docker pull quay.io/evilmartians/helm-kubectl:2.8.2
+docker pull quay.io/evilmartians/helm-kubectl:2.9.1
 ```
