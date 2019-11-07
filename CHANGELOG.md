@@ -1,6 +1,6 @@
 # UNRELEASED
 
-# 2.16.0 (07.11.2019)
+# 2.15.2 (07.11.2019)
 - Helm version set to 2.15.2
 - Kubectl version set to 1.16.2
 - Dockerfile: make base installation as separate layer
