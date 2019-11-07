@@ -7,6 +7,8 @@ ARG KUBE_LATEST_VERSION="v1.15.5"
 ARG HELM_VERSION="v2.15.1"
 ARG HELM_ARCHIVE="helm-${HELM_VERSION}-linux-amd64.tar.gz"
 
+WORKDIR /root
+
 RUN apk -U --no-cache upgrade \
     && apk add --no-cache ca-certificates bash\
     && apk add --no-cache -t deps curl \
@@ -19,7 +21,5 @@ RUN apk -U --no-cache upgrade \
     && mv /tmp/linux-amd64/helm /usr/local/bin/helm \
     && apk del --purge deps \
     && rm -rf /tmp/*
-
-WORKDIR /root
 
 CMD ["/bin/sh"]
