@@ -10,6 +10,7 @@ Use this one at your own risk!
 
 Tags:
 
+* `2.15.2` - helm `2.15.2`; kubectl `1.16.2`; alpine `3.10.3`
 * `2.13.0` - helm `2.13.0`; kubectl `1.13.3`; alpine `3.9`
 * `2.12.3` - helm `2.12.3`; kubectl `1.13.3`; alpine `3.8`
 * `2.12.0` - helm `2.12.0`; kubectl `1.13.0`; alpine `3.8`
@@ -17,5 +18,5 @@ Tags:
 ## Docker pull
 
 ```shell
-docker pull quay.io/evl.ms/helm-kubectl:2.12.3
+docker pull quay.io/evl.ms/helm-kubectl:2.16.0
 ```
