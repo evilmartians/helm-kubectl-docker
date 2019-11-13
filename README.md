@@ -10,6 +10,7 @@ Use this one at your own risk!
 
 Tags:
 
+* `2.16.1` - helm `2.16.1`; kubectl `1.16.2`; alpine `3.10.3`
 * `2.16.0` - helm `2.16.0`; kubectl `1.16.2`; alpine `3.10.3`
 * `2.13.0` - helm `2.13.0`; kubectl `1.13.3`; alpine `3.9`
 * `2.12.3` - helm `2.12.3`; kubectl `1.13.3`; alpine `3.8`
