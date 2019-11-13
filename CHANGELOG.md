@@ -1,4 +1,5 @@
 # UNRELEASED
+- Helm version set to [2.16.1](https://github.com/helm/helm/releases/tag/v2.16.1)
 
 # 2.16.0 (07.11.2019)
 - Helm version set to 2.16.0

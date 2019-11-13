@@ -7,8 +7,8 @@ ARG KUBECTL_VERSION="v1.16.2"
 ARG KUBECTL_CHECKSUM="3ff48e12f9c768ad548e4221d805281ea28dfcda5c18b3cd1797fe37aee3012e"
 ARG KUBECTL_URL="https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl"
 
-ARG HELM_VERSION="v2.16.0"
-ARG HELM_CHECKSUM="2d9124f582a33b269f48215a00922b3dcf7a03f265499886ba956fbc03ff9892"
+ARG HELM_VERSION="v2.16.1"
+ARG HELM_CHECKSUM="7eebaaa2da4734242bbcdced62cc32ba8c7164a18792c8acdf16c77abffce202"
 ARG HELM_ARCHIVE="helm-${HELM_VERSION}-linux-amd64.tar.gz"
 ARG HELM_URL="https://storage.googleapis.com/kubernetes-helm/${HELM_ARCHIVE}"
 
