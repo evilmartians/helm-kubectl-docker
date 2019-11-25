@@ -1,3 +1,6 @@
+# 2.16.1-2 (25.11.2019)
+- Added `openssh-client` executable to allow `git clone`.
+
 # 2.16.1-1 (25.11.2019)
 - Added `git` executable to allow speed up `git clone` on certain CI platforms.
 
