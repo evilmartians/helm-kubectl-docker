@@ -1,4 +1,5 @@
 # UNRELEASED
+- Added `git` executable to allow speed up `git clone` on certain CI platforms.
 
 # 2.16.1 (13.11.2019)
 - Helm version set to [2.16.1](https://github.com/helm/helm/releases/tag/v2.16.1)
