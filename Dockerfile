@@ -15,7 +15,7 @@ ARG HELM_URL="https://storage.googleapis.com/kubernetes-helm/${HELM_ARCHIVE}"
 WORKDIR /root
 
 RUN apk -U --no-cache upgrade \
-    && apk add --no-cache ca-certificates bash
+    && apk add --no-cache ca-certificates bash git
 RUN apk add --no-cache -t deps curl \
     && curl -L $KUBECTL_URL -o /usr/local/bin/kubectl \
     && echo "${KUBECTL_CHECKSUM}  /usr/local/bin/kubectl" | sha256sum -c \
