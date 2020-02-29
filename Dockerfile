@@ -1,14 +1,14 @@
-FROM alpine:3.10.3
+FROM alpine:3.11.3
 
 # Metadata
 LABEL maintainer="Evil Martians <admin@evilmartians.com>"
 
-ARG KUBECTL_VERSION="v1.16.4"
-ARG KUBECTL_CHECKSUM="bbb2030487ba0570227a48c6faac1b09cad03748f5508c567d078d20feca2df2"
+ARG KUBECTL_VERSION="v1.17.2"
+ARG KUBECTL_CHECKSUM="7732548b9c353114b0dfa173bc7bcdedd58a607a5b4ca49d867bdb4c05dc25a1"
 ARG KUBECTL_URL="https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl"
 
-ARG HELM_VERSION="v3.0.2"
-ARG HELM_CHECKSUM="21abd9db6ddfe989cf29a21b5eea2d1ac88bcdf9feab26da31399e787f2f8adb"
+ARG HELM_VERSION="v3.1.1"
+ARG HELM_CHECKSUM="c90bb022af05db17f9b3ea4898b0ffd6e903039933c07f0d5c45746018f6b677"
 ARG HELM_ARCHIVE="helm-${HELM_VERSION}-linux-amd64.tar.gz"
 ARG HELM_URL="https://get.helm.sh/${HELM_ARCHIVE}"
 

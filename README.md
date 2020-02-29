@@ -9,7 +9,8 @@ Use this one at your own risk!
 ## Details
 
 Tags:
-
+* `3.1.1` - helm `3.1.1`; kubectl `1.17.4`; alpine `3.11.3`
+* `3.0.2` - helm `3.0.2`; kubectl `1.16.4`
 * `2.16.1-2` - helm `2.16.1`; kubectl `1.16.2`; git `2.22.0-r0`; openssh-client `8.1_p1-r0`; alpine `3.10.3`
 * `2.16.1-1` - helm `2.16.1`; kubectl `1.16.2`; git `2.22.0-r0`;  alpine `3.10.3`
 * `2.16.1` - helm `2.16.1`; kubectl `1.16.2`; alpine `3.10.3`
