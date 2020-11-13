@@ -1,4 +1,5 @@
 # UNRELEASED
+- Alpine: 3.12.1
 - Helm: 3.4.1
 - Kubectl: 1.19.4
 - Fluxctl: 1.21.0
