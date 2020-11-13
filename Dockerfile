@@ -3,7 +3,7 @@ FROM alpine:3.12.0
 # Metadata
 LABEL maintainer="Evil Martians <admin@evilmartians.com>"
 
-ARG KUBECTL_VERSION="v1.18.3"
+ARG KUBECTL_VERSION="v1.19.4"
 ARG KUBECTL_URL="https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl"
 ARG KUBECTL_SHA256
 ARG KUBECTL_SHA256_URL="https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl.sha256"
