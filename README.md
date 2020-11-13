@@ -9,6 +9,7 @@ Use this one at your own risk!
 ## Details
 
 Tags:
+* `3.4.1` - helm `3.4.1`; kubectl `1.19.4`; alpine `3.12.1`
 * `3.2.1` - helm; kubectl `1.18.3`; alpine `3.12.0`
 * `3.1.1-1` - fluxctl `1.19.0`
 * `3.1.1` - helm `3.1.1`; kubectl `1.17.4`; alpine `3.11.3`
@@ -24,5 +25,5 @@ Tags:
 ## Docker pull
 
 ```shell
-docker pull quay.io/evl.ms/helm-kubectl:3.2.1
+docker pull quay.io/evl.ms/helm-kubectl:3.4.1
 ```
