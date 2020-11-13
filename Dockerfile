@@ -9,7 +9,8 @@ ARG KUBECTL_SHA256
 ARG KUBECTL_SHA256_URL="https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl.sha256"
 
 ARG HELM_VERSION="v3.2.1"
-ARG HELM_CHECKSUM="98c57f2b86493dd36ebaab98990e6d5117510f5efbf21c3344c3bdc91a4f947c"
+ARG HELM_SHA256
+ARG HELM_SHA256_URL="https://get.helm.sh/helm-${HELM_VERSION}-linux-amd64.tar.gz.sha256sum"
 ARG HELM_ARCHIVE="helm-${HELM_VERSION}-linux-amd64.tar.gz"
 ARG HELM_URL="https://get.helm.sh/${HELM_ARCHIVE}"
 
@@ -26,9 +27,9 @@ RUN apk add --no-cache -t deps curl \
     && echo "${KUBECTL_SHA256:-$(curl -sSL $KUBECTL_SHA256_URL)}  /usr/local/bin/kubectl" | sha256sum -c \
     && chmod +x /usr/local/bin/kubectl \
     && curl -L $HELM_URL -o $HELM_ARCHIVE \
+    && echo "${HELM_SHA256:-$(curl -sSL $HELM_SHA256_URL | grep -Eo '^[^ ]+')}  ${HELM_ARCHIVE}" | sha256sum -c \
     && tar -zxf ${HELM_ARCHIVE} \
     && mv linux-amd64/helm /usr/local/bin/helm \
-    && echo "${HELM_CHECKSUM}  /usr/local/bin/helm" | sha256sum -c \
     && curl -L ${FLUXCTL_URL} -o /usr/local/bin/fluxctl \
     && echo "${FLUXCTL_CHECKSUM}  /usr/local/bin/fluxctl" | sha256sum -c \
     && chmod +x /usr/local/bin/fluxctl \
