@@ -14,8 +14,8 @@ ARG HELM_SHA256_URL="https://get.helm.sh/helm-${HELM_VERSION}-linux-amd64.tar.gz
 ARG HELM_ARCHIVE="helm-${HELM_VERSION}-linux-amd64.tar.gz"
 ARG HELM_URL="https://get.helm.sh/${HELM_ARCHIVE}"
 
-ARG FLUXCTL_VERSION="1.19.0"
-ARG FLUXCTL_CHECKSUM="0e5855ec75eb64340967ea893127a794f0473509c123c16fb251cc6410cfcb7f"
+ARG FLUXCTL_VERSION="1.21.0"
+ARG FLUXCTL_CHECKSUM="b429f7bf20703fa2ebbd4b7b2955fb787545e0dc424c17c1d654caea24910653"
 ARG FLUXCTL_URL="https://github.com/fluxcd/flux/releases/download/${FLUXCTL_VERSION}/fluxctl_linux_amd64"
 
 WORKDIR /root

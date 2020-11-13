@@ -1,4 +1,5 @@
 # UNRELEASED
+- Fluxctl: 1.21.0
 - Dockerfile: make helm shasum fetchable
 - Dockerfile: make kubectl shasum fetchable
 
