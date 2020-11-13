@@ -1,3 +1,6 @@
+# UNRELEASED
+- Dockerfile: make kubectl shasum fetchable
+
 # 2.16.1-2 (25.11.2019)
 - Added `openssh-client` executable to allow `git clone`.
 

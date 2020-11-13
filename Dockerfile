@@ -4,8 +4,9 @@ FROM alpine:3.12.0
 LABEL maintainer="Evil Martians <admin@evilmartians.com>"
 
 ARG KUBECTL_VERSION="v1.18.3"
-ARG KUBECTL_CHECKSUM="6fcf70aae5bc64870c358fac153cdfdc93f55d8bae010741ecce06bb14c083ea"
 ARG KUBECTL_URL="https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl"
+ARG KUBECTL_SHA256
+ARG KUBECTL_SHA256_URL="https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl.sha256"
 
 ARG HELM_VERSION="v3.2.1"
 ARG HELM_CHECKSUM="98c57f2b86493dd36ebaab98990e6d5117510f5efbf21c3344c3bdc91a4f947c"
@@ -22,7 +23,7 @@ RUN apk -U --no-cache upgrade \
     && apk add --no-cache ca-certificates bash git openssh-client
 RUN apk add --no-cache -t deps curl \
     && curl -L $KUBECTL_URL -o /usr/local/bin/kubectl \
-    && echo "${KUBECTL_CHECKSUM}  /usr/local/bin/kubectl" | sha256sum -c \
+    && echo "${KUBECTL_SHA256:-$(curl -sSL $KUBECTL_SHA256_URL)}  /usr/local/bin/kubectl" | sha256sum -c \
     && chmod +x /usr/local/bin/kubectl \
     && curl -L $HELM_URL -o $HELM_ARCHIVE \
     && tar -zxf ${HELM_ARCHIVE} \
